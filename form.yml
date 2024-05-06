@@ -3,7 +3,7 @@ cluster: "iris"
 form:
   - modules
   - queue
-  - num_of_cores
+  - num_cores
   - memory
   - num_hours
 attributes:
