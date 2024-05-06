@@ -8,13 +8,14 @@ cd "${HOME}"
 
 # Load the required environment
 module load "<%= context.modules %>"
+module load java/20.0.1
 # singularity only needed if desktop is containerized
 # module load singularity/3.5.1
+
 #
-# #
-# # Launch Xfce Window Manager
-# #
+# Launch Xfce Window Manager
 #
+
 # (
 #   export SEND_256_COLORS_TO_REMOTE=1
 #   export XDG_CONFIG_HOME="<%= session.staged_root.join("config") %>"
@@ -32,5 +33,6 @@ module load "<%= context.modules %>"
 
 # Launch IGV
 module list
-set -x
-igv
+# set -x
+# igv
+bash /home/preskaa/IGV_2.17.4/igv.sh

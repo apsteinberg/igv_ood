@@ -19,7 +19,7 @@ attributes:
     min: 1
     step: 1
   memory:
-    value: 8
+    value: 20
     step: 4
     help: "Requested memory"
   num_hours:
