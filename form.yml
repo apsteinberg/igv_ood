@@ -2,13 +2,28 @@
 cluster: "iris"
 form:
   - modules
-  - bc_num_hours
-  - bc_email_on_started
+  - queue
   - num_of_cores
+  - memory
+  - num_hours
 attributes:
   modules: "igv/2.17.4"
-  bc_num_hours: 
+  queue:
+    label: "Queue"
+    value: "componc"
+  num_cores:
+    widget: "number_field"
+    label: "Number of cores"
+    value: 1
+    help: "Maximum number of CPU cores is 72"
     min: 1
-    max: 8
     step: 1
-  num_of_cores: 1
+  memory:
+    value: 8
+    step: 4
+    help: "Requested memory"
+  num_hours:
+    value: 2
+    min: 1
+    step: 1
+    help: "Maximum wall time is 1 week"
