@@ -1,7 +1,7 @@
 ---
 name: IGV
 category: Interactive Apps
-subcategory: Carley MPI Cluster
+subcategory: MSKCC IRIS cluster
 role: batch_connect
 description: |
   This app will launch IGV on a cluster node.
