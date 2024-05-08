@@ -9,7 +9,7 @@ attributes:
   modules: "igv/2.17.4"
   queue:
     label: "Queue"
-    value: "componc"
+    value: "componc_gpu"
   memory:
     value: 20
     step: 4
