@@ -3,27 +3,19 @@ cluster: "iris"
 form:
   - modules
   - queue
-  - num_cores
   - memory
-  - num_hours
+  - num_minutes
 attributes:
   modules: "igv/2.17.4"
   queue:
     label: "Queue"
     value: "componc"
-  num_cores:
-    widget: "number_field"
-    label: "Number of cores"
-    value: 1
-    help: "Maximum number of CPU cores is 72"
-    min: 1
-    step: 1
   memory:
     value: 20
     step: 4
     help: "Requested memory"
-  num_hours:
-    value: 2
-    min: 1
-    step: 1
+  num_minutes:
+    value: 120
+    min: 60
+    step: 60
     help: "Maximum wall time is 1 week"
