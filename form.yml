@@ -16,6 +16,6 @@ attributes:
     help: "Requested memory"
   num_minutes:
     value: 120
-    min: 60
-    step: 60
+    min: 20
+    step: 20
     help: "Maximum wall time is 1 week"
