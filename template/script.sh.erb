@@ -32,7 +32,9 @@ module load java/20.0.1
 #
 
 # Launch IGV
+module load igv/2.17.4
 module list
 set -x
 # igv
-bash /home/preskaa/IGV_2.17.4/igv.sh
+cd /admin/software/igv/IGV_Linux_2.17.4/
+bash igv.sh
